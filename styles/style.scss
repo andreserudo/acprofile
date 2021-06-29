@@ -1,0 +1,115 @@
+@import "variables";
+@import "_mixes";
+
+body,
+h1 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #69614e;
+}
+
+.menu {
+  height: 500px;
+  background-color: #f7f4e5;
+}
+
+.menu .app-list .app-images {
+  @include app($backgroundAppImages);
+
+  .camera-button {
+    height: 6px;
+    width: 8px;
+    background-color: #e86aba;
+    position: relative;
+    top: 29px;
+    left: 21px;
+  }
+  .camera-watch {
+    width: 30px;
+    height: 12px;
+    background-color: #4c3b32;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    top: 17px;
+    left: 35px;
+  }
+  .camera-visor {
+    width: 10px;
+    height: 5px;
+    background-color: white;
+    position: relative;
+    top: 12px;
+    left: 45px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  .camera-body {
+    width: 70px;
+    height: 38px;
+    background-color: #4c3b32;
+    position: relative;
+    top: 12px;
+    left: 15px;
+    border-radius: 8px;
+  }
+  .camera-len {
+    width: 18px;
+    height: 18px;
+    background-color: #9462d7;
+    border-radius: 50%;
+    position: relative;
+    top: -19px;
+    left: 38px;
+    border: 3px solid white;
+    box-shadow: 1px solid white;
+  }
+}
+
+.menu .app-list .app-tickets {
+  @include app($backgroundAppAchievements);
+  margin-left: 120px;
+}
+
+.menu .app-list .app-animals {
+  @include app($backgroundAppAnimals);
+  margin-left: 240px;
+}
+
+.menu .app-list .app-builds {
+  @include app($backgroundAppRecipes);
+  margin-top: 120px;
+}
+
+.menu .app-list .app-builder {
+  @include app($backgroundAppBuilder);
+  margin-top: 120px;
+  margin-left: 120px;
+}
+
+.menu .app-list .app-clothes {
+  @include app($backgroundAppClothes);
+  margin-top: 120px;
+  margin-left: 240px;
+}
+
+.menu .app-list .app-map {
+  @include app($backgroundAppMap);
+  margin-top: 240px;
+}
+
+.menu .app-list .app-id {
+  @include app($backgroundAppId);
+  margin-top: 240px;
+  margin-left: 120px;
+}
+
+.menu .app-list .app-helper {
+  @include app($backgroundAppHelper);
+  margin-top: 240px;
+  margin-left: 240px;
+}

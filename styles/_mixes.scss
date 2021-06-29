@@ -1,0 +1,8 @@
+@mixin app($backgroundColor) {
+  height: 100px;
+  width: 100px;
+  background-color: $backgroundColor;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+}

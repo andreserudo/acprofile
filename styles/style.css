@@ -1,0 +1,164 @@
+body,
+h1 {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: #69614e;
+}
+
+.menu {
+  height: 500px;
+  background-color: #f7f4e5;
+}
+
+.menu .app-list .app-images {
+  height: 100px;
+  width: 100px;
+  background-color: #c08ff3;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu .app-list .app-images .camera-button {
+  height: 6px;
+  width: 8px;
+  background-color: #e86aba;
+  position: relative;
+  top: 29px;
+  left: 21px;
+}
+
+.menu .app-list .app-images .camera-watch {
+  width: 30px;
+  height: 12px;
+  background-color: #4c3b32;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  top: 17px;
+  left: 35px;
+}
+
+.menu .app-list .app-images .camera-visor {
+  width: 10px;
+  height: 5px;
+  background-color: white;
+  position: relative;
+  top: 12px;
+  left: 45px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.menu .app-list .app-images .camera-body {
+  width: 70px;
+  height: 38px;
+  background-color: #4c3b32;
+  position: relative;
+  top: 12px;
+  left: 15px;
+  border-radius: 8px;
+}
+
+.menu .app-list .app-images .camera-len {
+  width: 18px;
+  height: 18px;
+  background-color: #9462d7;
+  border-radius: 50%;
+  position: relative;
+  top: -19px;
+  left: 38px;
+  border: 3px solid white;
+  -webkit-box-shadow: 1px solid white;
+          box-shadow: 1px solid white;
+}
+
+.menu .app-list .app-tickets {
+  height: 100px;
+  width: 100px;
+  background-color: #8c9af2;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 120px;
+}
+
+.menu .app-list .app-animals {
+  height: 100px;
+  width: 100px;
+  background-color: #f7ca68;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 240px;
+}
+
+.menu .app-list .app-builds {
+  height: 100px;
+  width: 100px;
+  background-color: #e59165;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+.menu .app-list .app-builder {
+  height: 100px;
+  width: 100px;
+  background-color: #998158;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 120px;
+  margin-left: 120px;
+}
+
+.menu .app-list .app-clothes {
+  height: 100px;
+  width: 100px;
+  background-color: #fe95a1;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 120px;
+  margin-left: 240px;
+}
+
+.menu .app-list .app-map {
+  height: 100px;
+  width: 100px;
+  background-color: #82d6bc;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 240px;
+}
+
+.menu .app-list .app-id {
+  height: 100px;
+  width: 100px;
+  background-color: #86c889;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 240px;
+  margin-left: 120px;
+}
+
+.menu .app-list .app-helper {
+  height: 100px;
+  width: 100px;
+  background-color: #fa746b;
+  border-radius: 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 240px;
+  margin-left: 240px;
+}
+/*# sourceMappingURL=style.css.map */
