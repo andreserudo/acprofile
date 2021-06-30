@@ -73,6 +73,50 @@ h1 {
 .menu .app-list .app-tickets {
   @include app($backgroundAppAchievements);
   margin-left: 120px;
+
+  .animal-running {
+    height: 30px;
+    width: 60px;
+    background-color: #4c3e2f;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    position: relative;
+    top: 30px;
+    left: 15px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #ddc872;
+      height: 15px;
+      width: 15px;
+      border-radius: 18px;
+      top: 2px;
+      left: 43px;
+      box-shadow: -10px -12px 0 0 #4c3e2f, -10px 20px 0 0 #4c3e2f,
+        -30px 20px 0 0 #4c3e2f, 5px 10px 0 0 #4c3e2f;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      box-shadow: 10px 10px;
+    }
+  }
+  .world {
+    width: 65px;
+    height: 31px;
+    background-color: #b6bef1;
+    position: relative;
+    top: 39px;
+    left: 20px;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
 
 .menu .app-list .app-animals {
