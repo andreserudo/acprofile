@@ -144,6 +144,44 @@ h1 {
   margin-left: 240px;
 }
 
+.menu .app-list .app-animals .butterfly {
+  height: 20px;
+  width: 20px;
+  background-color: #f5f3e7;
+  position: relative;
+  border-radius: 50%;
+  top: 15px;
+  left: 10px;
+  -webkit-box-shadow: 15px 0 0 0 #f5f3e7, 3px 10px 0 0 #f5f3e7, 12px 10px 0 0 #f5f3e7;
+          box-shadow: 15px 0 0 0 #f5f3e7, 3px 10px 0 0 #f5f3e7, 12px 10px 0 0 #f5f3e7;
+}
+
+.menu .app-list .app-animals .butterfly::after {
+  content: "";
+  background-color: #483a35;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  -webkit-box-shadow: 20px 0 0 0 #483a35;
+          box-shadow: 20px 0 0 0 #483a35;
+}
+
+.menu .app-list .app-animals .butterfly::before {
+  content: "";
+  background-color: #483a35;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  -webkit-box-shadow: 16px 0 0 0 #483a35;
+          box-shadow: 16px 0 0 0 #483a35;
+}
+
 .menu .app-list .app-builds {
   height: 100px;
   width: 100px;
