@@ -150,8 +150,8 @@ h1 {
   background-color: #f5f3e7;
   position: relative;
   border-radius: 50%;
-  top: 15px;
-  left: 10px;
+  top: 18px;
+  left: 15px;
   -webkit-box-shadow: 15px 0 0 0 #f5f3e7, 3px 10px 0 0 #f5f3e7, 12px 10px 0 0 #f5f3e7;
           box-shadow: 15px 0 0 0 #f5f3e7, 3px 10px 0 0 #f5f3e7, 12px 10px 0 0 #f5f3e7;
 }
@@ -180,6 +180,127 @@ h1 {
   left: 8px;
   -webkit-box-shadow: 16px 0 0 0 #483a35;
           box-shadow: 16px 0 0 0 #483a35;
+}
+
+.menu .app-list .app-animals .octopus {
+  height: 30px;
+  width: 32px;
+  background-color: #483a35;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  top: 11px;
+  left: 55px;
+}
+
+.menu .app-list .app-animals .octopus::after {
+  content: "";
+  background-color: #f7ca68;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 21px;
+  left: 8px;
+  -webkit-box-shadow: 10px 0 0 0 #f7ca68;
+          box-shadow: 10px 0 0 0 #f7ca68;
+}
+
+.menu .app-list .app-animals .octopus-legs {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #483a35;
+  position: relative;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 2px;
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+  top: 8px;
+  left: 52px;
+}
+
+.menu .app-list .app-animals .octopus-legs::after {
+  content: "";
+  background-color: #f7ca68;
+  height: 10px;
+  width: 10px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  left: 7px;
+}
+
+.menu .app-list .app-animals .octopus-legs-2 {
+  display: inline-block;
+  height: 15px;
+  width: 10px;
+  background-color: #483a35;
+  position: relative;
+  top: 8px;
+  left: 42px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.menu .app-list .app-animals .octopus-legs-2::after {
+  content: "";
+  background-color: #f7ca68;
+  height: 7px;
+  width: 7px;
+  border-top-left-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.menu .app-list .app-animals .octopus-legs-3 {
+  display: inline-block;
+  height: 15px;
+  width: 9px;
+  background-color: #483a35;
+  border-bottom-right-radius: 50%;
+  position: relative;
+  top: 8px;
+  left: 38px;
+}
+
+.menu .app-list .app-animals .octopus-legs-3::after {
+  content: "";
+  background-color: #f7ca68;
+  height: 8px;
+  width: 3px;
+  border-top-right-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+}
+
+.menu .app-list .app-animals .octopus-legs-4 {
+  display: inline-block;
+  height: 13px;
+  width: 9px;
+  background-color: #483a35;
+  position: relative;
+  border-bottom-right-radius: 40%;
+  border-top-right-radius: 6px;
+  top: 8px;
+  left: 34px;
+}
+
+.menu .app-list .app-animals .octopus-legs-4::after {
+  content: "";
+  background-color: #f7ca68;
+  height: 9px;
+  width: 5px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 0;
 }
 
 .menu .app-list .app-builds {
