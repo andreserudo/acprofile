@@ -303,6 +303,61 @@ h1 {
   left: 0;
 }
 
+.menu .app-list .app-animals .fish {
+  height: 20px;
+  width: 36px;
+  background-color: #483a35;
+  position: relative;
+  left: 15px;
+  border-radius: 50%;
+}
+
+.menu .app-list .app-animals .fish::after {
+  content: "";
+  background-color: #483a35;
+  height: 8px;
+  width: 7px;
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top: 2px;
+  right: -5px;
+}
+
+.menu .app-list .app-animals .fish::before {
+  content: "";
+  background-color: #483a35;
+  height: 8px;
+  width: 7px;
+  position: absolute;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 4px;
+  top: 9px;
+  right: -5px;
+}
+
+.menu .app-list .app-animals .fish .fish-eyes {
+  height: 4px;
+  width: 4px;
+  background-color: #f7ca68;
+  border-radius: 50%;
+  position: relative;
+  top: 6px;
+  left: 6px;
+}
+
+.menu .app-list .app-animals .fish .fish-fin {
+  width: 7px;
+  height: 6px;
+  background-color: #4aa09d;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: relative;
+  top: 6px;
+  left: 11px;
+}
+
 .menu .app-list .app-builds {
   height: 100px;
   width: 100px;
