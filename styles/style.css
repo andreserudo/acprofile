@@ -590,6 +590,42 @@ h1 {
           box-shadow: 0 10px 0 0 #493e33;
 }
 
+.menu .app-list .app-clothes .pencil {
+  width: 15px;
+  border-bottom: 16px solid #ffd146;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: relative;
+  -webkit-transform: rotate(220deg);
+          transform: rotate(220deg);
+  left: 42px;
+}
+
+.menu .app-list .app-clothes .pencil::after {
+  content: "";
+  width: 15px;
+  height: 8px;
+  background-color: #493a2e;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  position: absolute;
+  top: -8px;
+}
+
+.menu .app-list .app-clothes .pencil::before {
+  content: "";
+  width: 31px;
+  height: 50px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #49382e;
+  position: absolute;
+  right: -8px;
+  top: 16px;
+}
+
 .menu .app-list .app-map {
   height: 100px;
   width: 100px;

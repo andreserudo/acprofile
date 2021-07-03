@@ -513,6 +513,7 @@ h1 {
       right: 8px;
     }
   }
+
   .shirt-button {
     height: 8px;
     width: 8px;
@@ -522,6 +523,39 @@ h1 {
     top: -40px;
     left: 34px;
     box-shadow: 0 10px 0 0 $shirtButton;
+  }
+
+  .pencil {
+    width: 15px;
+    border-bottom: 16px solid $pencilColar;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: relative;
+    transform: rotate(220deg);
+    left: 42px;
+    &::after {
+      content: "";
+      width: 15px;
+      height: 8px;
+      background-color: $pencilGraphite;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 100%;
+      border-top-right-radius: 100%;
+      position: absolute;
+      top: -8px;
+    }
+    &::before {
+      content: "";
+      width: 31px;
+      height: 50px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-color: $pencilBody;
+      position: absolute;
+      right: -8px;
+      top: 16px;
+    }
   }
 }
 
