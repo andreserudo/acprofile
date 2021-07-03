@@ -11,7 +11,8 @@ h1 {
 }
 
 .menu {
-  height: 500px;
+  height: 100vh;
+  padding-left: 2rem;
   background-color: #f7f4e5;
 }
 
@@ -433,35 +434,38 @@ h1 {
   width: 15px;
   height: 15px;
   background-color: #483e33;
-  border-top-left-radius: 2px;
   position: relative;
   top: -15px;
   left: -2px;
 }
 
-.menu .app-list .app-builds .hammer .hammer-head::after {
-  content: "";
-  width: 13px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom: 8px solid #483e33;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  position: absolute;
-  top: 3px;
-  right: 6px;
+.menu .app-list .app-builds .hammer .hammer-head .hammer-head-front {
+  width: 15px;
+  height: 20px;
+  position: relative;
+  border-top-right-radius: 50%;
+  border-bottom: 5px solid #483e33;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  -webkit-transform: rotate(91deg);
+          transform: rotate(91deg);
+  top: -5px;
+  left: -1px;
 }
 
-.menu .app-list .app-builds .hammer .hammer-head::before {
+.menu .app-list .app-builds .hammer .hammer-head .hammer-head-front::after {
   content: "";
-  width: 10px;
-  height: 15px;
+  width: 20px;
+  height: 6px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 4px;
   background-color: #483e33;
-  border-top-right-radius: 100%;
   position: absolute;
-  right: -9px;
+  top: 23px;
+  left: -3px;
+  bottom: -11px;
 }
 
 .menu .app-list .app-builder {
