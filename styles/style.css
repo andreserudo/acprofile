@@ -513,6 +513,83 @@ h1 {
   margin-left: 240px;
 }
 
+.menu .app-list .app-clothes .shirt {
+  width: 40px;
+  position: relative;
+  border-bottom: 42px solid #f9f3e3;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: 20px;
+  left: 10px;
+}
+
+.menu .app-list .app-clothes .shirt::after {
+  content: "";
+  height: 15px;
+  width: 30px;
+  background-color: #f9f3e3;
+  position: absolute;
+  top: -7px;
+  left: -18px;
+  -webkit-transform: rotate(141deg);
+          transform: rotate(141deg);
+}
+
+.menu .app-list .app-clothes .shirt::before {
+  content: "";
+  height: 15px;
+  width: 30px;
+  background-color: #f9f3e3;
+  position: absolute;
+  top: -6px;
+  right: -19px;
+  -webkit-transform: rotate(223deg);
+          transform: rotate(223deg);
+}
+
+.menu .app-list .app-clothes .neck-shirt {
+  width: 34px;
+  height: 20px;
+  background-color: #f9f3e3;
+  position: relative;
+  bottom: 37px;
+  left: 21px;
+}
+
+.menu .app-list .app-clothes .neck-shirt::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #fe95a1;
+  border-bottom-left-radius: 100%;
+  position: absolute;
+  left: 8px;
+}
+
+.menu .app-list .app-clothes .neck-shirt::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #fe95a1;
+  border-bottom-right-radius: 100%;
+  position: absolute;
+  right: 8px;
+}
+
+.menu .app-list .app-clothes .shirt-button {
+  height: 8px;
+  width: 8px;
+  background-color: #493e33;
+  position: relative;
+  border-radius: 50%;
+  top: -40px;
+  left: 34px;
+  -webkit-box-shadow: 0 10px 0 0 #493e33;
+          box-shadow: 0 10px 0 0 #493e33;
+}
+
 .menu .app-list .app-map {
   height: 100px;
   width: 100px;
