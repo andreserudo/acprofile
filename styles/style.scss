@@ -325,6 +325,94 @@ h1 {
 .menu .app-list .app-builds {
   @include app($backgroundAppRecipes);
   margin-top: 120px;
+
+  .recipe-book {
+    height: 45px;
+    width: 35px;
+    background-color: $recipeBook;
+    border: 4px solid white;
+    border-radius: 2px;
+    position: relative;
+    top: 16px;
+    left: 15px;
+
+    .nut {
+      width: 22px;
+      height: 20px;
+      background-color: $nut;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+      position: relative;
+      top: 18px;
+      left: 6px;
+      &::after {
+        content: "";
+        height: 10px;
+        width: 22px;
+        background-color: $nutHead;
+        position: absolute;
+        top: -10px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 2px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 2px;
+      }
+      &::before {
+        content: "";
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background-color: $nutHead;
+        position: absolute;
+        left: 8px;
+        top: -12px;
+      }
+    }
+  }
+  .hammer {
+    width: 10px;
+    height: 25px;
+    background-color: $hammer;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    top: 1px;
+    left: 58px;
+    transform: rotate(35deg);
+    .hammer-head {
+      width: 15px;
+      height: 15px;
+      background-color: $hammerHead;
+      border-top-left-radius: 2px;
+      position: relative;
+      top: -15px;
+      left: -2px;
+      &::after {
+        content: "";
+        width: 13px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom: 8px solid $hammerHead;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 3px;
+        right: 6px;
+      }
+      &::before {
+        content: "";
+        width: 10px;
+        height: 15px;
+        background-color: $hammerHead;
+        border-top-right-radius: 100%;
+        position: absolute;
+        right: -9px;
+      }
+    }
+  }
 }
 
 .menu .app-list .app-builder {
