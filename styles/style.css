@@ -468,6 +468,29 @@ h1 {
   bottom: -11px;
 }
 
+.menu .app-list .app-builds .hammer .hammer-head .hammer-head-back {
+  width: 12px;
+  height: 15px;
+  background-color: #483e33;
+  position: relative;
+  top: -25px;
+  left: 14px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 50%;
+}
+
+.menu .app-list .app-builds .hammer .hammer-head .hammer-head-back::before {
+  content: "";
+  height: 6px;
+  width: 9px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  background-color: #e59165;
+  position: absolute;
+  left: 2px;
+  bottom: -1px;
+}
+
 .menu .app-list .app-builder {
   height: 100px;
   width: 100px;

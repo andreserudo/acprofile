@@ -418,6 +418,28 @@ h1 {
           bottom: -11px;
         }
       }
+
+      .hammer-head-back {
+        width: 12px;
+        height: 15px;
+        background-color: $hammerHead;
+        position: relative;
+        top: -25px;
+        left: 14px;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 50%;
+        &::before {
+          content: "";
+          height: 6px;
+          width: 9px;
+          border-top-left-radius: 100%;
+          border-top-right-radius: 100%;
+          background-color: $backgroundAppRecipes;
+          position: absolute;
+          left: 2px;
+          bottom: -1px;
+        }
+      }
     }
   }
 }
