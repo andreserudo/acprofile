@@ -637,13 +637,35 @@ h1 {
     background-color: $book;
     position: relative;
     top: 15px;
-    left: 25px;
+    left: 27px;
     border-top-left-radius: 4px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 12px;
     border-right: 2px solid $bookPages;
     border-bottom: 5px solid $bookPages;
+
+    .front-page {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: $backgroundImageFrontPage;
+      top: 10px;
+      left: 7px;
+      border: 4px solid #6f9b70;
+
+      &::before {
+        content: "";
+        height: 5px;
+        width: 20px;
+        background-color: #6f9b70;
+        position: absolute;
+        bottom: -15px;
+        border-radius: 8px;
+        box-shadow: -4px 10px 0 0 #6f9b70, 4px 10px 0 0 #6f9b70;
+      }
+    }
   }
 }
 

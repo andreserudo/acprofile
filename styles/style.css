@@ -696,13 +696,36 @@ h1 {
   background-color: #563f33;
   position: relative;
   top: 15px;
-  left: 25px;
+  left: 27px;
   border-top-left-radius: 4px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 12px;
   border-right: 2px solid #f6f9e6;
   border-bottom: 5px solid #f6f9e6;
+}
+
+.menu .app-list .app-id .book .front-page {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #f6eca0;
+  top: 10px;
+  left: 7px;
+  border: 4px solid #6f9b70;
+}
+
+.menu .app-list .app-id .book .front-page::before {
+  content: "";
+  height: 5px;
+  width: 20px;
+  background-color: #6f9b70;
+  position: absolute;
+  bottom: -15px;
+  border-radius: 8px;
+  -webkit-box-shadow: -4px 10px 0 0 #6f9b70, 4px 10px 0 0 #6f9b70;
+          box-shadow: -4px 10px 0 0 #6f9b70, 4px 10px 0 0 #6f9b70;
 }
 
 .menu .app-list .app-helper {
