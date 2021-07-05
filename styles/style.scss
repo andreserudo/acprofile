@@ -646,24 +646,73 @@ h1 {
     border-bottom: 5px solid $bookPages;
 
     .front-page {
-      height: 20px;
-      width: 20px;
+      height: 22px;
+      width: 22px;
       border-radius: 50%;
       position: absolute;
       background-color: $backgroundImageFrontPage;
       top: 10px;
       left: 7px;
-      border: 4px solid #6f9b70;
+      border: 4px solid $bookHighlightsFrontPage;
+      z-index: 3;
 
       &::before {
         content: "";
         height: 5px;
         width: 20px;
-        background-color: #6f9b70;
+        background-color: $bookHighlightsFrontPage;
         position: absolute;
         bottom: -15px;
         border-radius: 8px;
-        box-shadow: -4px 10px 0 0 #6f9b70, 4px 10px 0 0 #6f9b70;
+        box-shadow: -4px 10px 0 0 $bookHighlightsFrontPage,
+          4px 10px 0 0 $bookHighlightsFrontPage;
+      }
+
+      .person {
+        height: 14px;
+        width: 14px;
+        background-color: $bookPersonImage;
+        border-radius: 50%;
+        position: relative;
+        top: 5px;
+        left: 4px;
+        box-shadow: -6px 0 0 -4px $bookPersonImage,
+          6px 0 0 -4px $bookPersonImage;
+        z-index: 2;
+        &::before {
+          content: "";
+          height: 5px;
+          width: 5px;
+          position: absolute;
+          top: 12px;
+          left: 7px;
+          background-color: $bookPersonImage;
+          border-top-right-radius: 100%;
+        }
+        &::after {
+          content: "";
+          height: 5px;
+          width: 5px;
+          position: absolute;
+          top: 12px;
+          left: 2px;
+          background-color: $bookPersonImage;
+          border-top-left-radius: 100%;
+        }
+
+        .eyes {
+          width: 2px;
+          height: 2px;
+          background-color: $bookPersonEyes;
+          border-radius: 50%;
+          position: relative;
+          top: 5px;
+          left: 4px;
+          box-shadow: 5px 0 0 0 $bookPersonEyes;
+        }
+
+        .mouth {
+        }
       }
     }
   }
