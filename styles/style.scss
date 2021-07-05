@@ -562,6 +562,47 @@ h1 {
 .menu .app-list .app-map {
   @include app($backgroundAppMap);
   margin-top: 240px;
+
+  .map {
+    height: 100%;
+    width: 100%;
+    background-color: #f7f5e6;
+    position: relative;
+    top: 12px;
+    left: 15px;
+    clip-path: polygon(
+      4px 34px,
+      4px 66px,
+      19px 57px,
+      35px 65px,
+      50px 57px,
+      67px 67px,
+      66px 34px,
+      51px 26px,
+      36px 32px,
+      18px 25px
+    );
+
+    &:before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: #5fcac8;
+      position: absolute;
+      clip-path: polygon(
+        7px 38px,
+        7px 60px,
+        19px 53px,
+        35px 60px,
+        51px 53px,
+        63px 60px,
+        63px 38px,
+        51px 31px,
+        35px 37px,
+        19px 31px
+      );
+    }
+  }
 }
 
 .menu .app-list .app-id {
