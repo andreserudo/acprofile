@@ -630,6 +630,21 @@ h1 {
   @include app($backgroundAppId);
   margin-top: 240px;
   margin-left: 120px;
+
+  .book {
+    height: 70px;
+    width: 43px;
+    background-color: $book;
+    position: relative;
+    top: 15px;
+    left: 25px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 12px;
+    border-right: 2px solid $bookPages;
+    border-bottom: 5px solid $bookPages;
+  }
 }
 
 .menu .app-list .app-helper {
