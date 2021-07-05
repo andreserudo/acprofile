@@ -563,13 +563,34 @@ h1 {
   @include app($backgroundAppMap);
   margin-top: 240px;
 
+  .location {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: $locationMarkerInside;
+    position: relative;
+    top: 17px;
+    left: 38px;
+    border: 9px solid $locationMarkerOutside;
+    z-index: 3;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -7px;
+      border: 10px solid transparent;
+      border-top: 17px solid $locationMarkerOutside;
+    }
+  }
+
   .map {
     height: 100%;
     width: 100%;
     background-color: #f7f5e6;
     position: relative;
-    top: 12px;
+    top: -13px;
     left: 15px;
+    z-index: 2;
     clip-path: polygon(
       4px 34px,
       4px 66px,
