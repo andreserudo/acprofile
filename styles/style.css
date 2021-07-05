@@ -520,7 +520,7 @@ h1 {
   width: 20px;
   position: absolute;
   top: 36px;
-  left: 17px;
+  left: 16px;
   background-color: #fde133;
   border-top-right-radius: 100%;
 }
@@ -532,9 +532,40 @@ h1 {
   position: absolute;
   z-index: 3;
   top: 36px;
-  left: 1px;
+  left: 0px;
   background-color: #fde133;
   border-top-left-radius: 100%;
+}
+
+.menu .app-list .app-builder .person .helmet {
+  width: 1px;
+  height: 22px;
+  position: relative;
+  top: -12px;
+  left: 17px;
+  background-color: #fdf2d8;
+}
+
+.menu .app-list .app-builder .person .helmet::after {
+  content: "";
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 0;
+  left: -22px;
+  background-color: #fdf2d8;
+  border-top-left-radius: 100%;
+}
+
+.menu .app-list .app-builder .person .helmet::before {
+  content: "";
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 0px;
+  right: -22px;
+  background-color: #fdf2d8;
+  border-top-right-radius: 100%;
 }
 
 .menu .app-list .app-builder .person .eyes {
@@ -543,7 +574,7 @@ h1 {
   background-color: #845205;
   border-radius: 50%;
   position: relative;
-  top: 12px;
+  top: -10px;
   left: 10px;
   -webkit-box-shadow: 12px 0 0 0 #845205;
           box-shadow: 12px 0 0 0 #845205;
@@ -555,8 +586,8 @@ h1 {
   border-bottom: 4px solid #845205;
   border-radius: 100%;
   position: relative;
-  top: 15px;
-  left: 13px;
+  top: -7px;
+  left: 14px;
 }
 
 .menu .app-list .app-clothes {
