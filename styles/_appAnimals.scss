@@ -1,0 +1,202 @@
+@mixin butterfly() {
+  .butterfly {
+    height: 20px;
+    width: 20px;
+    background-color: #f5f3e7;
+    position: relative;
+    border-radius: 50%;
+    top: 18px;
+    left: 15px;
+    box-shadow: 15px 0 0 0 #f5f3e7, 3px 10px 0 0 #f5f3e7, 12px 10px 0 0 #f5f3e7;
+
+    &::after {
+      content: "";
+      background-color: $animalsMainColor;
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+      position: absolute;
+      top: 7px;
+      left: 5px;
+      box-shadow: 20px 0 0 0 $animalsMainColor;
+    }
+    &::before {
+      content: "";
+      background-color: $animalsMainColor;
+      height: 2px;
+      width: 2px;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 8px;
+      box-shadow: 16px 0 0 0 $animalsMainColor;
+    }
+  }
+}
+
+@mixin octopus() {
+  .octopus {
+    height: 30px;
+    width: 32px;
+    background-color: $animalsMainColor;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    top: 11px;
+    left: 55px;
+    &::after {
+      content: "";
+      background-color: $backgroundAppAnimals;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      position: absolute;
+      top: 21px;
+      left: 8px;
+      box-shadow: 10px 0 0 0 $backgroundAppAnimals;
+    }
+  }
+
+  .octopus-legs {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: $animalsMainColor;
+    position: relative;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 2px;
+    transform: rotate(100deg);
+    top: 8px;
+    left: 52px;
+    &::after {
+      content: "";
+      background-color: $backgroundAppAnimals;
+      height: 10px;
+      width: 10px;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      position: absolute;
+      left: 7px;
+    }
+  }
+  .octopus-legs-2 {
+    display: inline-block;
+    height: 15px;
+    width: 10px;
+    background-color: $animalsMainColor;
+    position: relative;
+    top: 8px;
+    left: 42px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    &::after {
+      content: "";
+      background-color: $backgroundAppAnimals;
+      height: 7px;
+      width: 7px;
+      border-top-left-radius: 50%;
+      position: absolute;
+      top: 7px;
+      left: 7px;
+    }
+  }
+
+  .octopus-legs-3 {
+    display: inline-block;
+    height: 15px;
+    width: 9px;
+    background-color: $animalsMainColor;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    top: 8px;
+    left: 37px;
+    &::after {
+      content: "";
+      background-color: $backgroundAppAnimals;
+      height: 8px;
+      width: 3px;
+      border-top-right-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      left: -1px;
+    }
+  }
+
+  .octopus-legs-4 {
+    display: inline-block;
+    height: 13px;
+    width: 9px;
+    background-color: $animalsMainColor;
+    position: relative;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 6px;
+    top: 8px;
+    left: 31px;
+    &::after {
+      content: "";
+      background-color: $backgroundAppAnimals;
+      height: 9px;
+      width: 5px;
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      position: absolute;
+      top: 6px;
+      left: 0;
+    }
+  }
+}
+@mixin fish() {
+  .fish {
+    height: 20px;
+    width: 36px;
+    background-color: $animalsMainColor;
+    position: relative;
+    left: 15px;
+    border-radius: 50%;
+    &::after {
+      content: "";
+      background-color: $animalsMainColor;
+      height: 8px;
+      width: 7px;
+      position: absolute;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      top: 2px;
+      right: -5px;
+    }
+    &::before {
+      content: "";
+      background-color: $animalsMainColor;
+      height: 8px;
+      width: 7px;
+      position: absolute;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 4px;
+      top: 9px;
+      right: -5px;
+    }
+    .fish-eyes {
+      height: 4px;
+      width: 4px;
+      background-color: $backgroundAppAnimals;
+      border-radius: 50%;
+      position: relative;
+      top: 6px;
+      left: 6px;
+    }
+    .fish-fin {
+      width: 7px;
+      height: 6px;
+      background-color: $fishFin;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      position: relative;
+      top: 6px;
+      left: 11px;
+    }
+  }
+}

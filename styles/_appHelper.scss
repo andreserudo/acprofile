@@ -1,0 +1,184 @@
+@mixin helicopter() {
+  .helicopter {
+    position: relative;
+    top: 25px;
+    left: 15px;
+
+    .propellers {
+      height: 7px;
+      width: 7px;
+      background-color: $propellerBase;
+      border-radius: 50%;
+      position: relative;
+      left: 25px;
+      &::after {
+        content: "";
+        height: 5px;
+        width: 30px;
+        background-color: $propeller;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 100%;
+        position: absolute;
+        left: -30px;
+      }
+      &::before {
+        content: "";
+        height: 5px;
+        width: 30px;
+        background-color: $propeller;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 100%;
+        border-bottom-left-radius: 100%;
+        position: absolute;
+        left: 7px;
+      }
+    }
+    .propeller-base {
+      height: 12px;
+      width: 1px;
+      background-color: $propellerHelmet;
+      position: relative;
+      left: 28px;
+      &::after {
+        content: "";
+        height: 12px;
+        width: 22px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        background-color: $propellerHelmet;
+        border-top-left-radius: 100%;
+      }
+      &::before {
+        content: "";
+        height: 12px;
+        width: 22px;
+        position: absolute;
+        top: 0px;
+        right: -20px;
+        background-color: $propellerHelmet;
+        border-top-right-radius: 100%;
+      }
+    }
+    .cockpit {
+      height: 26px;
+      width: 38px;
+      background-color: $helicopterBody;
+      position: relative;
+      left: 8px;
+      border-top-left-radius: 2px;
+      border-bottom-right-radius: 15px;
+      transform: skew(-12deg);
+      &::after {
+        content: "";
+        height: 8px;
+        width: 6px;
+        position: absolute;
+        background-color: $helicopterWindow;
+        top: 4px;
+        left: 4px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+      &::before {
+        content: "";
+        height: 6px;
+        width: 5px;
+        position: absolute;
+        background-color: $helicopterWindow;
+        top: 4px;
+        left: 13px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+    }
+    .cabin {
+      height: 16px;
+      width: 15px;
+      background-color: $helicopterBody;
+      position: relative;
+      left: -6px;
+      top: -16px;
+      border-top-left-radius: 100%;
+      border-bottom-left-radius: 100%;
+      transform: skew(-12deg);
+      &::after {
+        content: "";
+        width: 11px;
+        height: 7px;
+        position: absolute;
+        border-bottom-left-radius: 100%;
+        border-bottom: 11px solid $helicopterBody;
+        transform: rotate(270deg);
+        top: -13px;
+        left: 7px;
+      }
+    }
+
+    .tail {
+      width: 35px;
+      border-top: 8px solid $helicopterBody;
+      position: relative;
+      left: 39px;
+      top: -41px;
+      transform: rotate(-12deg);
+      &::after {
+        content: "";
+        width: 7px;
+        height: 9px;
+        background-color: $helicopterBody;
+        border-top-left-radius: 1px;
+        position: absolute;
+        top: -13px;
+        right: -3px;
+        transform: skew(-35deg);
+      }
+      &::before {
+        content: "";
+        width: 7px;
+        height: 9px;
+        background-color: $helicopterBody;
+        position: absolute;
+        top: -5px;
+        right: -3px;
+        transform: skew(35deg);
+      }
+    }
+
+    .landing-gear {
+      width: 60px;
+      height: 5px;
+      background-color: $helicopterBody;
+      border-radius: 4px;
+      position: relative;
+      top: -17px;
+      &::after {
+        content: "";
+        width: 5px;
+        height: 12px;
+        background-color: $helicopterBody;
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        transform: rotate(-22deg);
+      }
+      &::before {
+        content: "";
+        width: 5px;
+        height: 12px;
+        background-color: $helicopterBody;
+        position: absolute;
+        top: -10px;
+        left: 34px;
+        transform: rotate(-22deg);
+      }
+    }
+  }
+}

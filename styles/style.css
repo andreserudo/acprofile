@@ -16,6 +16,10 @@ h1 {
   background-color: #f7f4e5;
 }
 
+.menu .app-list {
+  height: 450px;
+}
+
 .menu .app-list .app-images {
   height: 100px;
   width: 100px;
@@ -359,7 +363,7 @@ h1 {
   left: 11px;
 }
 
-.menu .app-list .app-builds {
+.menu .app-list .app-recipes {
   height: 100px;
   width: 100px;
   background-color: #e59165;
@@ -369,7 +373,7 @@ h1 {
   margin-top: 120px;
 }
 
-.menu .app-list .app-builds .recipe-book {
+.menu .app-list .app-recipes .recipe-book {
   height: 45px;
   width: 35px;
   background-color: #e48b74;
@@ -380,7 +384,7 @@ h1 {
   left: 15px;
 }
 
-.menu .app-list .app-builds .recipe-book .nut {
+.menu .app-list .app-recipes .recipe-book .nut {
   width: 22px;
   height: 20px;
   background-color: #573c30;
@@ -393,7 +397,7 @@ h1 {
   left: 6px;
 }
 
-.menu .app-list .app-builds .recipe-book .nut::after {
+.menu .app-list .app-recipes .recipe-book .nut::after {
   content: "";
   height: 10px;
   width: 22px;
@@ -406,7 +410,7 @@ h1 {
   border-bottom-right-radius: 2px;
 }
 
-.menu .app-list .app-builds .recipe-book .nut::before {
+.menu .app-list .app-recipes .recipe-book .nut::before {
   content: "";
   height: 5px;
   width: 5px;
@@ -417,7 +421,7 @@ h1 {
   top: -12px;
 }
 
-.menu .app-list .app-builds .hammer {
+.menu .app-list .app-recipes .hammer {
   width: 10px;
   height: 25px;
   background-color: #ffca28;
@@ -430,7 +434,7 @@ h1 {
           transform: rotate(35deg);
 }
 
-.menu .app-list .app-builds .hammer .hammer-head {
+.menu .app-list .app-recipes .hammer .hammer-head {
   width: 15px;
   height: 15px;
   background-color: #483e33;
@@ -439,7 +443,7 @@ h1 {
   left: -2px;
 }
 
-.menu .app-list .app-builds .hammer .hammer-head .hammer-head-front {
+.menu .app-list .app-recipes .hammer .hammer-head .hammer-head-front {
   width: 15px;
   height: 20px;
   position: relative;
@@ -453,7 +457,7 @@ h1 {
   left: -1px;
 }
 
-.menu .app-list .app-builds .hammer .hammer-head .hammer-head-front::after {
+.menu .app-list .app-recipes .hammer .hammer-head .hammer-head-front::after {
   content: "";
   width: 20px;
   height: 6px;
@@ -468,7 +472,7 @@ h1 {
   bottom: -11px;
 }
 
-.menu .app-list .app-builds .hammer .hammer-head .hammer-head-back {
+.menu .app-list .app-recipes .hammer .hammer-head .hammer-head-back {
   width: 12px;
   height: 15px;
   background-color: #483e33;
@@ -479,7 +483,7 @@ h1 {
   border-bottom-right-radius: 50%;
 }
 
-.menu .app-list .app-builds .hammer .hammer-head .hammer-head-back::before {
+.menu .app-list .app-recipes .hammer .hammer-head .hammer-head-back::before {
   content: "";
   height: 6px;
   width: 9px;
