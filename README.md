@@ -2,6 +2,8 @@
 
 This an UI Clone based on [Animal Crossing: New Horizon](https://www.animal-crossing.com/new-horizons/). The intention is recreated the APP available in the game using only HTML and CSS.
 
+You can see on codepen too: https://codepen.io/andreserudo/pen/dyWGmry
+
 ## How is it going?
 
 So far, you can compare what I've done. On the left my work and on the right the game:
