@@ -266,7 +266,7 @@ h1 {
   border-bottom-right-radius: 50%;
   position: relative;
   top: 8px;
-  left: 38px;
+  left: 37px;
 }
 
 .menu .app-list .app-animals .octopus-legs-3::after {
@@ -289,7 +289,7 @@ h1 {
   border-bottom-right-radius: 40%;
   border-top-right-radius: 6px;
   top: 8px;
-  left: 34px;
+  left: 31px;
 }
 
 .menu .app-list .app-animals .octopus-legs-4::after {
@@ -885,5 +885,210 @@ h1 {
   cursor: pointer;
   margin-top: 240px;
   margin-left: 240px;
+}
+
+.menu .app-list .app-helper .helicopter {
+  position: relative;
+  top: 25px;
+  left: 15px;
+}
+
+.menu .app-list .app-helper .helicopter .propellers {
+  height: 7px;
+  width: 7px;
+  background-color: #ffcd00;
+  border-radius: 50%;
+  position: relative;
+  left: 25px;
+}
+
+.menu .app-list .app-helper .helicopter .propellers::after {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background-color: #fdab13;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  position: absolute;
+  left: -30px;
+}
+
+.menu .app-list .app-helper .helicopter .propellers::before {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background-color: #fdab13;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  position: absolute;
+  left: 7px;
+}
+
+.menu .app-list .app-helper .helicopter .propeller-base {
+  height: 12px;
+  width: 1px;
+  background-color: #f6d502;
+  position: relative;
+  left: 28px;
+}
+
+.menu .app-list .app-helper .helicopter .propeller-base::after {
+  content: "";
+  height: 12px;
+  width: 22px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background-color: #f6d502;
+  border-top-left-radius: 100%;
+}
+
+.menu .app-list .app-helper .helicopter .propeller-base::before {
+  content: "";
+  height: 12px;
+  width: 22px;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  background-color: #f6d502;
+  border-top-right-radius: 100%;
+}
+
+.menu .app-list .app-helper .helicopter .cockpit {
+  height: 26px;
+  width: 38px;
+  background-color: #493d2a;
+  position: relative;
+  left: 8px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 15px;
+  -webkit-transform: skew(-12deg);
+          transform: skew(-12deg);
+}
+
+.menu .app-list .app-helper .helicopter .cockpit::after {
+  content: "";
+  height: 8px;
+  width: 6px;
+  position: absolute;
+  background-color: #fdebe7;
+  top: 4px;
+  left: 4px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.menu .app-list .app-helper .helicopter .cockpit::before {
+  content: "";
+  height: 6px;
+  width: 5px;
+  position: absolute;
+  background-color: #fdebe7;
+  top: 4px;
+  left: 13px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.menu .app-list .app-helper .helicopter .cabin {
+  height: 16px;
+  width: 15px;
+  background-color: #493d2a;
+  position: relative;
+  left: -6px;
+  top: -16px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  -webkit-transform: skew(-12deg);
+          transform: skew(-12deg);
+}
+
+.menu .app-list .app-helper .helicopter .cabin::after {
+  content: "";
+  width: 11px;
+  height: 7px;
+  position: absolute;
+  border-bottom-left-radius: 100%;
+  border-bottom: 11px solid #493d2a;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: -13px;
+  left: 7px;
+}
+
+.menu .app-list .app-helper .helicopter .tail {
+  width: 35px;
+  border-top: 8px solid #493d2a;
+  position: relative;
+  left: 39px;
+  top: -41px;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.menu .app-list .app-helper .helicopter .tail::after {
+  content: "";
+  width: 7px;
+  height: 9px;
+  background-color: #493d2a;
+  border-top-left-radius: 1px;
+  position: absolute;
+  top: -13px;
+  right: -3px;
+  -webkit-transform: skew(-35deg);
+          transform: skew(-35deg);
+}
+
+.menu .app-list .app-helper .helicopter .tail::before {
+  content: "";
+  width: 7px;
+  height: 9px;
+  background-color: #493d2a;
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  -webkit-transform: skew(35deg);
+          transform: skew(35deg);
+}
+
+.menu .app-list .app-helper .helicopter .landing-gear {
+  width: 60px;
+  height: 5px;
+  background-color: #493d2a;
+  border-radius: 4px;
+  position: relative;
+  top: -17px;
+}
+
+.menu .app-list .app-helper .helicopter .landing-gear::after {
+  content: "";
+  width: 5px;
+  height: 12px;
+  background-color: #493d2a;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  -webkit-transform: rotate(-22deg);
+          transform: rotate(-22deg);
+}
+
+.menu .app-list .app-helper .helicopter .landing-gear::before {
+  content: "";
+  width: 5px;
+  height: 12px;
+  background-color: #493d2a;
+  position: absolute;
+  top: -10px;
+  left: 34px;
+  -webkit-transform: rotate(-22deg);
+          transform: rotate(-22deg);
 }
 /*# sourceMappingURL=style.css.map */
